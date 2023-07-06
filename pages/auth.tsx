@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Input from "@/components/Input"
 import axios from "axios"
 import { useCallback, useState } from "react"
@@ -63,7 +64,7 @@ const Auth = () => {
                   onChange={(ev: any) => setName(ev.target.value)}
                   id="name"
                   value={name}
-                />
+                  type={"text"}                />
               )}
               <Input
                 label="Email"
